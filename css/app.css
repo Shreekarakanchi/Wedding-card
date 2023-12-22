@@ -2,6 +2,24 @@ html {
     scroll-behavior: smooth !important;
 }
 
+@media screen and (max-width: 760px) {
+    .couple {
+        display: flex;
+        flex-direction: column;
+    }
+    .map{
+        height: 300 !important;
+    }
+    .location{
+        flex-direction: column;
+        display: flex;
+    }
+    .loc{
+        width: 90%;
+    }
+}
+
+
 body {
     font-family: 'Josefin Sans', sans-serif !important;
     padding: 0 !important;
@@ -92,20 +110,6 @@ body::-webkit-scrollbar {
     animation-duration: 2.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-}
-
-@keyframes spin-icon {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.spin-button {
-    animation: spin-icon 5s linear infinite;
 }
 
 .dark-section {
